@@ -25,22 +25,26 @@
             >;
         };
 
-        num_mods {
+        lower_layer {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3      &kp N4       &kp N5     &kp N6   &kp N7       &kp N8     &kp N9     &kp N0    &kp DEL
-&kp TAB    &kp F1    &kp F2    &kp F3      &kp F4       &kp F5     &kp F6   &kp MINUS    &kp PG_UP  &kp LBKT   &kp RBKT  &kp BSLH
-&kp LSHFT  &kp F7    &kp F8    &kp F9      &kp F10      &kp F11    &kp F12  &kp EQUAL    &kp PG_DN  &kp HOME   &kp END   &kp ENTER
-&kp LCTRL  &kp LGUI  &kp LALT  &sys_reset  &to DEFAULT  &kp SPACE  &trans   &mo BT_CTRL  &kp LEFT   &kp RIGHT  &kp UP    &kp DOWN
+&trans  &kp EXCL     &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE     &kp PIPE      &kp N7        &kp N8        &kp N9        &kp N0     &kp DEL
+&trans  &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MINUS  &kp AMPS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp EQUAL
+&trans  &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE     &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp PRINTSCREEN
+&trans  &trans       &trans      &trans                &trans                 &trans        &trans        &trans        &kp LEFT      &kp RIGHT     &kp UP     &kp DOWN
             >;
+
+            label = "Lower Layer (Symbols)";
         };
 
-        bt_control {
+        upper_layer {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans      &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans      &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans      &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans
             >;
+
+            label = "Upper Layer (Mod & Arrows)";
         };
     };
 };
